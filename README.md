@@ -1,6 +1,8 @@
 # 6150-cssign
 CREATE A NEW WEB
+
 1. Design web's construction
+
 2. Achieve functions and using pointed HTML and HTML5 controls, such as :
 Favicon <img width="402" alt="截屏2023-09-13 22 46 08" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/0d0cd09c-a862-44bf-923b-76f5346b522d">
    
@@ -14,12 +16,39 @@ Hyperlink<img width="1511" alt="截屏2023-09-13 22 51 41" src="https://github.c
 
 Button<img width="1512" alt="截屏2023-09-13 22 53 12" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/a8a6eb90-7e43-40f2-a6ea-e38f4cc64260">
 
+audio<img width="301" alt="截屏2023-09-13 22 54 12" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/3dd5f32a-c61c-403c-867a-b51aae6d2aa2">
 
-    audio
-    video
-    header
-    footer
-    summary
-    menu
-    tel for contact information
-    mailto for contact information
+video<img width="1109" alt="截屏2023-09-13 22 54 25" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/cde645e6-fd4e-4675-bd4c-51d6c90faa9f">
+
+header
+    <header>
+        <div class="container">
+            <nav class="related-nav">
+                <img src="img/WechatIMG817(已去底).jpg" alt="ticket" class="phlio">
+                <ul>
+                    <li><a href="page02.html">Home</a></li>
+                    <li><a href="preparations.html">Preparations</a></li>
+                    <li><a href="newstart.html">New start</a></li>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Opportunities</a></li>
+                    <li><a href="page01.html">Back</a></li>
+              
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+   
+footer<img width="434" alt="截屏2023-09-13 22 56 33" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/f7208ab2-4947-4f69-8a61-b36f62a996ed">
+
+summary<img width="1508" alt="截屏2023-09-13 22 57 43" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/614c0c06-7815-4c7d-97e4-2f0dd46f5c58">
+
+menu<img width="558" alt="截屏2023-09-13 22 58 00" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/68edd0c8-760c-4478-aee8-b3edaefcea41">
+
+tel for contact information
+mailto for contact information<img width="461" alt="截屏2023-09-13 22 56 56" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/9528cf83-ec8c-47a5-ba16-abd70ba49188">
+
+3.Use an external CSS file to make up which in the file of Week 1.
+
+4.Use appropriate colors for the website, headings,layouts and use relevant images. Meantime, I break the page into sections for better visual appeal.
+
