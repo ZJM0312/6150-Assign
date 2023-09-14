@@ -4,6 +4,7 @@ CREATE A NEW WEB
 1. Design web's construction
 
 2. Achieve functions and using pointed HTML and HTML5 controls, such as :
+   
 Favicon <img width="402" alt="截屏2023-09-13 22 46 08" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/0d0cd09c-a862-44bf-923b-76f5346b522d">
    
 Table<img width="1511" alt="截屏2023-09-13 22 49 19" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/0c3a340a-b91d-4dc3-83df-056d5e6921a3">
