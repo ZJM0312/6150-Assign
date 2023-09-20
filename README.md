@@ -1,6 +1,9 @@
 # 6150-cssign
 CREATE A NEW WEB
 
+This is my week 2 assignment. I have used all pointed HTML and HTML5 controls and further optimize last week webiste.
+Beginning with the second page of this website. At the 
+
 1. Design web's construction
 
 2. Achieve functions and using pointed HTML and HTML5 controls, such as :
