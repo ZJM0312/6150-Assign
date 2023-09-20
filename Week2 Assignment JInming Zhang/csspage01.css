@@ -1,0 +1,41 @@
+* {
+  background-color: rgba(242, 242, 242, 0.169);
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* body {
+  background-color: rgb(243, 255, 255);
+} */
+header {
+  background-image: url(img/pcimage.png);
+  background-position: center;
+  background-size: 95% 100%;
+}
+
+.body-h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4vw;
+  font-family: serif;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 20%;
+  position: 50% 50%;
+  flex: none;
+}
+
+.button-click {
+  color: red;
+  font-size: 30px;
+  background-color: rgb(170, 170, 170);
+  margin-left: 70%;
+}
+.a.visited {
+  color: blue;
+  background-color: 30px solid orangered;
+}
+
+footer {
+  font-size: small;
+  margin-top: 100%;
+}
