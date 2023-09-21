@@ -150,6 +150,7 @@ article div h2 {
   padding: 30px 20px 0px 20px;
   float: left;
   width: 32%;
+  height: 65vh;
   border: 3px solid #44444489;
   border-width: 45px;
   margin-left: 1em;
@@ -171,6 +172,7 @@ table {
   padding-left: 2em;
   /* border: 2px soild #8c8c8c; */
   border-collapse: collapse;
+  margin: 0 auto;
 }
 
 td,
@@ -263,4 +265,10 @@ summary {
 .foot {
   clear: both;
   font-size: 10px;
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 600px) {
 }

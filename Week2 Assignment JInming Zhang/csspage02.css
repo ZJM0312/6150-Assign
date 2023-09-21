@@ -3,25 +3,31 @@ border-radius：15px；
  */
 body {
   background-color: white;
-  margin: 0;
+  margin-right: 0;
 }
 
 /* For iPad */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Add your styles for iPads here */
-}
+/* } */
 
 /* For Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   /* Add your styles for mobile devices here */
-  section {
-    width: 95%; /* Adjust the width for smaller screens */
+
+  body {
+    margin-right: 0;
+    min-width: 0;
   }
+  .container {
+    width: 95%;
+  }
+
   /* Add other responsive styles for article, audio, and video if necessary */
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   /* position: relative; */
 }
@@ -36,8 +42,8 @@ header::after {
 }
 
 .phlio {
-  width: 100px;
-  height: 80px;
+  width: 8em;
+  height: 4em;
   /* float: left; */
   padding: 10px 0;
   margin-left: 3px;
@@ -63,6 +69,7 @@ header::after {
   font-size: 25px;
   background-color: rgba(255, 166, 0, 0.525);
   font-family: serif; */
+  width: 0 auto;
   float: left;
   display: flex;
 }
@@ -261,6 +268,7 @@ section h2 {
 }
 
 .momentss {
+  clear: both;
   overflow: auto;
   font-size: 50px;
 }
@@ -295,6 +303,7 @@ audio {
 }
 
 video {
+  clear: both;
   padding-left: 1em;
   width: 50%;
   height: 38em;
@@ -310,6 +319,7 @@ video {
   padding-left: 2em;
   padding: 20px;
   background-image: url(img/new\ try01.jpeg);
+  background-size: 2000px 200px;
   border: 2px solid #444;
   margin: 0;
 }
