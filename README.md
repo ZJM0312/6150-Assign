@@ -1,8 +1,16 @@
 # 6150-cssign
-CREATE A NEW WEB
+WEB DESIGN
 
 This is my week 2 assignment. I have used all pointed HTML and HTML5 controls and further optimize last week webiste.
-Beginning with the second page of this website. At the 
+Beginning with the second page of this website, we can see that the self-adapting navigation, titles, paragraghs, summary, image gallery, form from up to down. In order to achieve these functions and make the website responsive, I tried to use float, overflow, column layout, position, psudo-class, selectors, and media. Here are some screenshots about my website:
+<img width="1512" alt="截屏2023-09-20 22 23 42" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/85f14312-ec98-4c4f-8361-c20c6040a2bc">
+<img width="1512" alt="截屏2023-09-20 22 23 36" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/30ee1178-b2e2-4f2d-8080-bd32c59df3b6">
+<img width="1512" alt="截屏2023-09-20 22 23 34" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/ced8555f-e714-483b-94ba-bf2df0d2bbf3">
+<img width="1512" alt="截屏2023-09-20 22 23 20" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/344880ee-fe00-4f5b-bdd8-78e25145ee08">
+<img width="1512" alt="截屏2023-09-20 22 23 14" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/a453acc8-e9d4-44f3-b67d-0f191b0f054f">
+<img width="1512" alt="截屏2023-09-20 22 22 59" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/f4e8290d-bf2d-4091-a3b7-4dbefc5d2020">
+<img width="1512" alt="截屏2023-09-20 22 22 50" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/4de96c2a-fc76-4d74-87ae-2bd5542e4f1d">
+
 
 1. Design web's construction
 
