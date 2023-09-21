@@ -1,6 +1,6 @@
 # 6150-cssign
 WEB DESIGN
-
+WEEK 2
 This is my week 2 assignment. I have used all pointed HTML and HTML5 controls and further optimize last week webiste.
 Beginning with the second page of this website, we can see that the self-adapting navigation, titles, paragraghs, summary, image gallery, form from up to down. In order to achieve these functions and make the website responsive, I tried to use float, overflow, column layout, position, psudo-class, selectors, and media. Here are some screenshots about my website:
 <img width="1512" alt="截屏2023-09-20 22 23 42" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/85f14312-ec98-4c4f-8361-c20c6040a2bc">
@@ -12,6 +12,12 @@ Beginning with the second page of this website, we can see that the self-adaptin
 <img width="1512" alt="截屏2023-09-20 22 22 50" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/4de96c2a-fc76-4d74-87ae-2bd5542e4f1d">
 
 
+
+
+
+
+
+WEEK 1
 1. Design web's construction
 
 2. Achieve functions and using pointed HTML and HTML5 controls, such as :
