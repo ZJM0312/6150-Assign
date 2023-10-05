@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Form.css" />
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+      }
+      main {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feeback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form action="" id="my-form" name="myForm" onsubmit="clearForm();">
+          <div class="control">
+            <label for="name">Name* - </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter name here"
+              required
+            />
+          </div>
+          <div id="error_name" style="display: none; color: red">
+            Invalid Name, Please enter valid name.
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="email">Email* - </label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter email id"
+              required
+            />
+          </div>
+          <div id="error_email" style="display: none; color: red">
+            Invalid Email, Please enter valid email.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="phoneNumber">Phone Number* - </label>
+            <input
+              type="text"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="Enter phone here"
+              required
+            />
+          </div>
+          <div id="error_phoneNumber" style="display: none; color: red">
+            Invalid Phone Number, Please enter valid phone number.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="country">Country* - </label>
+            <input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="Enter Country here"
+              required
+            />
+          </div>
+          <div id="error_country" style="display: none; color: red">
+            Invalid country, Please enter valid country.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="city">City* - </label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Enter city here"
+              required
+            />
+          </div>
+          <div id="error_city" style="display: none; color: red">
+            Invalid city, Please enter valid city.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="address1">Address 1 * - </label>
+            <input
+              type="text"
+              name="address1"
+              id="address1"
+              placeholder="Enter Address 1 here"
+              required
+            />
+          </div>
+          <div id="error_address1" style="display: none; color: red">
+            Invalid Address, Please enter valid address.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="address2">Address 2 - </label>
+            <input
+              type="text"
+              name="address2"
+              id="address2"
+              placeholder="Enter Address 2 here"
+            />
+          </div>
+          <div id="error_address2" style="display: none; color: red">
+            Invalid Address, Please enter valid address.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <div class="control">
+            <label for="zip">Zip Code* - </label>
+            <input
+              type="text"
+              name="zip"
+              id="zip"
+              placeholder="Enter zip here"
+              required
+            />
+          </div>
+          <div id="error_zip" style="display: none; color: red">
+            Invalid Zip, Please enter valid zip.
+            <br /><br />
+          </div>
+          <br /><br />
+
+          <label>Product: </label>
+          <select
+            name="career_select"
+            id="career_select"
+            onChange="updateCheckboxes()"
+          >
+            <option></option>
+            <option value="Bubble Tea">Bubble Tea</option>
+            <option value="Frappuchino">Frappuchino</option>
+            <option value="Fruit Juice">Fruit Juice</option>
+            <option value="Smoothie">Smoothie</option>
+            <option value="SodaDrink">SodaDrink</option>
+          </select>
+          <br /><br />
+
+          <div id="dynamic_checkboxes"></div>
+
+          <div class="control">
+            <label for="comment">Comment* - </label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Enter comment here"
+              required
+            ></textarea>
+          </div>
+          <div id="error_comment" style="display: none; color: red">
+            Invalid Comment, Please enter valid comment.
+            <br /><br />
+          </div>
+          <br /><br />
+          <input type="submit" value="Submit" name="submit" />
+          <input type="reset" value="Reset" name="reset" />
+        </form>
+      </main>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
