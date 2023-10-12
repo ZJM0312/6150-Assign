@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@import "config/config";
+@import "utilities/utilities";
+@import "navigation";
+@import "footer/footer";
+@import "cartoon/cartoon.scss";
+@import "button/buttons01";
+
+/*
+
+.body ---  //Nested Properties
+.header--- //Number Operations
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  background-color: darken($color-white, 0.3);
+  @include set-one(weight, 400);
+  @include set-one(size, 16px);
+  // font-weight: 400;
+  // font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: var(--page1-padding);
+}
+
+.header {
+  height: 15vh + 80vh;
+
+  //Nested Properties
+  background: {
+    image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      ),
+      url(../img/nat-7.jpg);
+    size: cover;
+    position: top;
+  }
+  position: relative;
+  clip-path: polygon(0 0, 100% 4vh, 100% 100%, 0 88vh);
+  backface-visibility: hidden;
+
+  .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .text-box {
+    /* 居中 */
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    transform: translate(-50% -50%);
+    margin-right: 30px;
+    text-align: center;
+
+    .heading-primary {
+      color: $color-white;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+
+      .heading-primary-main {
+        display: block;
+        @include set-one(size, 69px);
+        // font-size: 69px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 50px;
+        animation-name: moveInLeft;
+        animation-duration: 1.5s;
+      }
+
+      .heading-primary-sub {
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 15px;
+        animation-name: moveInRight;
+        animation-duration: 1.5s;
+        margin-bottom: 10%;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+.details-heading {
+  text-align: center;
+  position: relative;
+  top: 20px; /* 调整这个值来使标题放在合适的位置 */
+  z-index: 10;
+
+  .heading-details {
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    border-radius: 20px;
+    display: inline-block; /* 使背景适应文本大小 */
+    margin-right: 1300px;
+  }
+}
+
+.container {
+  color: rgb(87, 87, 87);
+  margin-top: 6vh;
+  background-color: $color-grey;
+  display: grid;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    ),
+    url(../img/nat-7.jpg);
+  background-size: cover;
+  height: 2000px;
+  padding: var(--page1-padding);
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: 163px 163px 163px;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  border-radius: 50px;
+  justify-items: center;
+  //    上面在调节位置，再调
+  // clip-path: polygon(0 2.5vh, 100% 10vh, 100% 100%, 0 100%);
+
+  .h1 {
+    float: right;
+    font-size: 45px;
+    font-family: fantasy;
+  }
+
+  .item {
+    background-color: rgba(250, 235, 215, 0.513);
+    // height: 200px;
+    // width: 160px;
+    font-size: 2.2em;
+  }
+
+  .item1 {
+    padding-top: 10em;
+    border-radius: 30px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url(../img/nat-6.jpg);
+    background-size: cover;
+
+    .my-1 {
+      font-size: 55px;
+      color: rgba(240, 255, 255, 0.79);
+      text-transform: uppercase;
+    }
+  }
+
+  .item6,
+  .item8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgba(250, 235, 215, 0.575);
+  }
+}
+
+// COLORS:
+
+// Light green: #7ed56f
+// Medium green: #55c57a
+// Dark green: #28b485

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+//margin and padding class
+
+$spacemounts: (1, 2, 3, 4);
+
+@each $space in $spacemounts {
+  .m-#{$space} {
+    margin: #{$space} rem;
+  }
+
+  .my-#{$space} {
+    margin: #{$space} rem;
+  }
+}

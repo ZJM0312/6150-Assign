@@ -1,0 +1,42 @@
+$color-primary: #c55555;
+$color-primary-dark: #01b2bfe0;
+$color-primary-light: #5fe647d1;
+$color-white: #fff;
+$color-grey: #777777;
+//Variables
+//Interpolations在下面👇
+//Mixin在下面👇
+
+// $font-stack: Arial, Helvetica, sans-serif;
+// $page1-padding: 30px;
+
+//Custom properties
+:root {
+  --font-stack: Arial, Helvetica, sans-serif;
+  --page1-padding: 30px;
+  --page2-padding: 30px;
+}
+
+//Function
+// Set the text color based on the background color
+@function set-text-color($color) {
+  @if (lightness($color) >70) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// set the background color and text color
+//Mixin
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+//Interpolations
+$prop1: font;
+
+@mixin set-one($side, $val) {
+  #{$prop1}-#{$side}: $val;
+}

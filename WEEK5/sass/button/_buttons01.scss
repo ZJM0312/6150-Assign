@@ -1,0 +1,82 @@
+//Placeholder Selectors
+//@extend
+%btn {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin: 3px;
+  animation-duration: 1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-learn {
+  @extend %btn;
+  background-color: lighten($color-grey, 30%);
+}
+
+//演示文稿！！！！EXTEND
+
+.btn-signup {
+  @extend %btn;
+  background-color: darken($color-white, 30%);
+}
+
+//header button
+.btn:link,
+.btn :visited {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  transition: all 0.2s;
+  border-radius: 100px;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: $color-white;
+  color: $color-grey;
+}
+
+/* 夸张button 效果 */
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transition: all 0.4s;
+  /* scale放大动画 */
+}
+
+.btn-white::after {
+  background-color: $color-white;
+}
+
+.btn:hover::after {
+  transform: scale(1.15);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}

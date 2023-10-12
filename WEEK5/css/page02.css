@@ -1,0 +1,233 @@
+:root {
+  --font-stack: Arial, Helvetica, sans-serif;
+  --page1-padding: 30px;
+  --page2-padding: 30px;
+}
+
+.btn-signup, .btn-learn {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin: 3px;
+  animation-duration: 1s;
+}
+.btn-signup:hover, .btn-learn:hover {
+  transform: scale(1.1);
+}
+
+.btn-learn {
+  background-color: #c4c4c4;
+}
+
+.btn-signup {
+  background-color: #b3b3b3;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 400px;
+    padding: 10px;
+  }
+  .showcase .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase .container h1 {
+    margin-bottom: 20px;
+  }
+  .showcase .container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase-content {
+    text-align: center;
+    flex-direction: column;
+  }
+  .showcase-content div {
+    order: 2;
+  }
+  .showcase-content img {
+    order: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: initial;
+    margin-bottom: 20px;
+  }
+}
+.m-1 {
+  margin: 1 rem;
+}
+
+.my-1 {
+  margin: 1 rem;
+}
+
+.m-2 {
+  margin: 2 rem;
+}
+
+.my-2 {
+  margin: 2 rem;
+}
+
+.m-3 {
+  margin: 3 rem;
+}
+
+.my-3 {
+  margin: 3 rem;
+}
+
+.m-4 {
+  margin: 4 rem;
+}
+
+.my-4 {
+  margin: 4 rem;
+}
+
+.site-footer {
+  color: rgb(0, 165, 14);
+  padding: 40px 0;
+}
+.site-footer .footer-credit {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(39, 39, 39, 0.8352941176);
+}
+
+.showcase {
+  background-image: linear-gradient(to right bottom, rgba(95, 230, 71, 0.8196078431), rgba(1, 178, 191, 0.8784313725)), url(../img/nat-7.jpg);
+  background-size: cover;
+  background-position: top;
+  background-color: #c55555;
+  color: #fff;
+  height: auto;
+  padding: 30px;
+}
+.showcase h1 {
+  font-size: 3em;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.showcase nav {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.171);
+  padding: 1em 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.showcase ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5em;
+}
+.showcase li {
+  padding: 15px;
+}
+.showcase a {
+  text-decoration: none;
+  font-size: 1.3em;
+}
+.showcase a:hover {
+  color: rgba(95, 230, 71, 0.8196078431);
+}
+.showcase a::after {
+  color: rgba(1, 178, 191, 0.8784313725);
+}
+.showcase-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background-image: linear-gradient(to right bottom, rgba(95, 230, 71, 0.8196078431), rgba(1, 178, 191, 0.8784313725)), url(../img/nat-7.jpg);
+  background-size: cover;
+}
+.showcase-content .readytogo {
+  font-size: 52px;
+  text-align: right;
+  margin-left: 3em;
+  padding-right: 2em;
+  line-height: 1.4;
+  color: rgba(110, 161, 255, 0.721);
+  background-color: rgba(145, 255, 61, 0.198);
+  border: 5px solid rgba(255, 255, 255, 0.3098039216);
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.showcase-content .readytogo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.showcase-content img {
+  height: 39.375em;
+  width: 62.5em;
+}
+.showcase-content p {
+  margin: 20px 0;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.scrolling-gallery {
+  padding: 30px;
+  background-color: rgba(74, 255, 195, 0.57);
+  display: grid;
+  grid-template-rows: repeat(2, 500px) 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.scrolling-gallery .item {
+  background-image: linear-gradient(to right bottom, rgba(95, 230, 71, 0.8196078431), rgba(1, 178, 191, 0.8784313725)), url(../img/nat-7.jpg);
+  background-size: cover;
+}
+.scrolling-gallery .item--1,
+.scrolling-gallery .item--2,
+.scrolling-gallery .item--3,
+.scrolling-gallery .item--5 {
+  font-size: 22px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 30px solid rgba(119, 119, 119, 0.4509803922);
+}
+.scrolling-gallery .item--1 video,
+.scrolling-gallery .item--2 video,
+.scrolling-gallery .item--3 video,
+.scrolling-gallery .item--5 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scrolling-gallery .item--4 {
+  grid-column: 1/3;
+  background-image: url(../img/nat-1-large.jpg);
+  background-size: cover;
+}
+.scrolling-gallery .item--6 {
+  background-color: #797979;
+  grid-column: 1/4;
+}
+.scrolling-gallery .item--6 a {
+  list-style: none;
+}
+.scrolling-gallery p {
+  font-size: 20px;
+}/*# sourceMappingURL=page02.css.map */
