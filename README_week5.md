@@ -11,12 +11,14 @@ This is my week 5 assignment:
 
 
 2.Implement a minimum of TWO CSS Grid layout and TWO Flexbox layout in my pages wherever it fits.
- Flexbox:
+ Flexbox-1:
  <img width="1512" alt="截屏2023-10-11 20 59 32" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/e309f0b8-46f6-4be7-9acf-edca1810d927">
+ Flexbox-2:
 <img width="1511" alt="截屏2023-10-11 20 59 39" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/3d73850d-4668-41f4-bd08-ff5934d0d53f">
 
-CSS GRID:
+CSS GRID-01:
 <img width="1512" alt="截屏2023-10-11 20 59 17" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/9ed7ab9f-4c91-45c2-81da-ef4637af442d">
+CSS GRID-02:
 <img width="1512" alt="截屏2023-10-11 20 59 47" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/47e1e992-4cbe-4018-9dcc-ab6fb0f45117">
 
 
