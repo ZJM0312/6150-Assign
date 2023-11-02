@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, #6dc1ff, #8a82ff);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3em;
+}
+
+#timeLabel {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 5em;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#datePicker {
+  font-size: 2em;
+}
+
+button {
+  font-size: 3em;
+  background: #fff;
+  color: #555;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #6dc1ff;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 3em;
+}
+
+body {
+  margin: 3em 10em 10em 10em;
+  border: 15px solid #777;
+  border-radius: 8px;
+}
+body header .title {
+  font-size: 6vh;
+  color: rgba(182, 218, 255, 0.908);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 80px 10px;
+  margin-bottom: 0px;
+  background-image: url("../img/nat-6.jpg");
+  background-size: cover;
+  border: 2vh solid rgba(218, 218, 218, 0.3411764706);
+  border-radius: 10px;
+}
+body .input {
+  margin: 0em 10em;
+}
+body .input form {
+  margin: 0;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+body .input form .inputgroup {
+  margin: 10px;
+}
+body .input form .inputgroup .error {
+  color: red;
+}
+body .input form .loginButton {
+  padding: 1em 6em;
+}/*# sourceMappingURL=PartA_Login.css.map */

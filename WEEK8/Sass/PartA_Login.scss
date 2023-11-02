@@ -1,0 +1,45 @@
+* {
+  margin: 3em;
+}
+
+body {
+  margin: 3em 10em 10em 10em;
+  border: 15px solid #777;
+  border-radius: 8px;
+
+  header {
+    .title {
+      font-size: 6vh;
+      color: rgba(182, 218, 255, 0.908);
+      font-family: sans-serif;
+      text-align: center;
+      padding: 80px 10px;
+      margin-bottom: 0px;
+      background-image: url("../img/nat-6.jpg");
+      background-size: cover;
+      border: 2vh solid #dadada57;
+      border-radius: 10px;
+    }
+  }
+
+  .input {
+    margin: 0em 10em;
+    form {
+      margin: 0;
+      margin-left: 10em;
+      margin-right: 10em;
+
+      .inputgroup {
+        margin: 10px;
+
+        .error {
+          color: red;
+        }
+      }
+
+      .loginButton {
+        padding: 1em 6em;
+      }
+    }
+  }
+}

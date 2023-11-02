@@ -1,0 +1,76 @@
+body {
+  margin: 10em 30em !important;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f4f6f8;
+  background-image: url("../img/nat-5.jpg");
+}
+
+.username {
+  margin: 10px;
+  padding: 1em;
+  border: 10px solid rgba(0, 123, 255, 0.3490196078);
+}
+
+h1 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+h1 span {
+  color: #4a4a4a;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 50px;
+}
+.input-group .input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+.input-group input.form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group .error-message-container {
+  position: absolute;
+  font-size: 25px;
+  bottom: -22px;
+  right: 10px;
+  color: red;
+}
+.input-group .error-message-container .error-message {
+  font-size: 15px;
+}
+
+button.btn {
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+button.btn:hover {
+  transform: translateY(-2px);
+}
+button.btn:active {
+  transform: translateY(1px);
+}
+
+#result {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+#nextBtn {
+  padding: 0 !important;
+  background-color: rgba(0, 123, 255, 0.5568627451);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 2em;
+}
+#nextBtn:hover {
+  background-color: #cdcfd2;
+}/*# sourceMappingURL=PartA.css.map */

@@ -1,0 +1,83 @@
+// 基础颜色
+$primary-color: #007bff;
+$error-color: red;
+
+body {
+  margin: 10em 30em !important;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f4f6f8;
+  background-image: url("../img/nat-5.jpg");
+}
+
+.username {
+  margin: 10px;
+  padding: 1em;
+  border: 10px solid #007bff59;
+}
+
+h1 {
+  color: $primary-color;
+  font-weight: bold;
+  margin-bottom: 40px;
+  span {
+    color: #4a4a4a; //用户名的颜色
+  }
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 50px;
+
+  .input-group-text {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+  }
+
+  input.form-control {
+    border-top-left-radius: 0; // 使得输入框和文字区域整合得更加紧密
+    border-bottom-left-radius: 0;
+  }
+
+  .error-message-container {
+    position: absolute;
+    font-size: 25px;
+    bottom: -22px; // 根据你的需求调整这个值
+    right: 10px;
+    color: red;
+
+    .error-message {
+      font-size: 15px;
+    }
+  }
+}
+button.btn {
+  width: 120px; //固定按钮宽度
+  height: 50px;
+  font-weight: bold;
+  margin-right: 20px; // 按钮间距
+  &:hover {
+    transform: translateY(-2px); // 悬停时的轻微上移效果
+  }
+  &:active {
+    transform: translateY(1px); // 按下时的轻微下移效果
+  }
+}
+
+#result {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+#nextBtn {
+  padding: 0 !important;
+  background-color: #007bff8e; // 使用深蓝色背景
+  color: #fff; // 使用白色文字
+  border: none; // 移除边框
+  border-radius: 25px; // 添加圆角
+  font-size: 2em; // 调整字体大小
+  &:hover {
+    background-color: #cdcfd2; // 深蓝色鼠标悬停效果
+  }
+}
