@@ -1,10 +1,10 @@
-$(document).ready(function () {
-  function validateEmail(email) {
+$(document).ready(() => {
+  const validateEmail = (email) => {
     const re = /^[a-zA-Z0-9._%+-]+@northeastern\.edu$/;
     return re.test(email);
-  }
+  };
 
-  function validate() {
+  const validate = () => {
     let isValid = true;
 
     // 验证电子邮箱
@@ -20,8 +20,6 @@ $(document).ready(function () {
     }
 
     // 验证用户名
-    //Special Characters Check
-    //Minimum and maximum length check
     const username = $("#username").val();
     if (username === "") {
       $("#usernameError").text("Username cannot be empty");
@@ -58,19 +56,15 @@ $(document).ready(function () {
     $(".loginButton").prop("disabled", !isValid);
 
     return isValid;
-  }
+  };
 
   // 输入框发生改变时进行验证
-  // Validate on input change
   $("input").on("input", validate);
 
   // 提交表单时进行验证
-  // Validate on form submission
-  $("form").submit(function (e) {
+  $("form").submit((e) => {
     e.preventDefault();
     if (validate()) {
-      // 重定向到第二页，携带用户名作为URL参数
-      // Redirect to the second page, carrying the username as a URL parameter
       window.location.href = "PartA.html?username=" + $("#username").val();
     }
   });

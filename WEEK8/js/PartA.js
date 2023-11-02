@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(() => {
   // 解析URL参数
-  function getQueryParam(name) {
+  const getQueryParam = (name) => {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
-  }
+  };
 
   const username = getQueryParam("username");
   if (username) {
