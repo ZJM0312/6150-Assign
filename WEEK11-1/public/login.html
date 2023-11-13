@@ -1,0 +1,100 @@
+<!-- public/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        background: linear-gradient(to right, #097bfe, #0058fc);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        background-color: antiquewhite;
+        margin: 2em;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        font-size: 3em;
+        clear: both;
+        text-align: center;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 1em;
+      }
+      .form-group label {
+        display: block;
+        color: #666;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group button {
+        width: 100%;
+        padding: 1em;
+        border: none;
+        background: #5cb85c;
+        color: white;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .form-group button:hover {
+        background: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Login</h2>
+
+    <form id="loginForm">
+      Full Name: <input type="text" id="fullName" required /> Password:
+      <input type="password" id="password" required />
+      <button type="submit">Login</button>
+    </form>
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const fullName = document.getElementById("fullName").value;
+          const password = document.getElementById("password").value;
+
+          fetch("/api/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ fullName, password }),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Login failed");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              alert("Login successful");
+              // Redirect to another page or update the UI as needed
+            })
+            .catch((error) => {
+              alert(error.message);
+            });
+        });
+    </script>
+  </body>
+</html>
