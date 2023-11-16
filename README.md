@@ -42,7 +42,8 @@ In the request body, input the login credentials in JSON format:json
     "password": "YourPassword"
 }
 Send the request and observe the response. A successful login will result in a status code of 200 and, typically, a user object or token in the response body.
-<img width="1287" alt="截屏2023-11-16 17 47 01" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/85f5b347-a843-4952-a31b-8c3dbd112476">
+<img width="1287" alt="截屏2023-11-16 17 47 01" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/d09c59e0-e02a-4e32-8808-fafb1024f031">
+
 
 
 //作业二
@@ -55,7 +56,9 @@ Send the request and observe the response. A successful login will result in a s
 //   "username": "Jinming",
 //   "password": "123456"
 // }
-<img width="1286" alt="截屏2023-11-16 17 47 24" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/4fbe2a38-d89c-4c3f-98e7-eb03e3768550">
+
+<img width="1286" alt="截屏2023-11-16 17 47 24" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/9669562c-b652-44ed-b83f-416641af105b">
+
 
 // Content-Type 为 application/json
 // http://localhost:3000/api/login?Content-Type=application/json
@@ -95,7 +98,7 @@ To run this project, follow these steps:
 4. Start the development server with `npm start`.
 5. Open your browser and go to `http://localhost:3000` to view the application.
 
-<img width="1286" alt="截屏2023-11-16 17 45 38" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/c2c779e9-af29-4fa2-8eca-3487ada4c6df">
+<img width="1286" alt="截屏2023-11-16 17 45 38" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/dae8d5b7-a1b2-44b8-a738-8ef03501f698">
 
 
 ## Components
