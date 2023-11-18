@@ -2,6 +2,126 @@
 
 WEB DESIGN
 
+# WEEK11
+1.Front-end & Back-end  
+
+Login Page: User Authentication System
+
+This project is a user authentication system that includes a login feature. It utilizes Node.js, Express, and MongoDB for the backend with a simple front-end login form.
+
+## Project Structure
+
+- `controllers/`: Contains controller files like `authController.js` for handling authentication logic and `userController.js` for user-related actions.
+- `models/`: Contains Mongoose models for the application; `User.js` is the user model.
+- `routes/`: Includes routing files like `authRoutes.js` for authentication routes and `userRoutes.js` for user-related routes.
+- `services/`: Contains service files like `authService.js` that handle business logic.
+- `public/`: Holds front-end static files, including the `login.html` for the login interface.
+- `img/`: Stores image files used in the project, such as `nat-2.jpg`.
+- `server.js`: The main server file that initializes and runs the Express app.
+
+## Setup Instructions
+
+Ensure you have Node.js and MongoDB installed on your system and that MongoDB is running.
+
+### Installing Dependencies
+
+Navigate to the project root directory and run the following command to install the necessary dependencies:
+
+```bash
+npm install
+
+Testing with Postman
+You can also test the backend authentication API directly using Postman:
+
+Set up a new POST request to http://localhost:3000/login.
+Set the header Content-Type to application/json.
+In the request body, input the login credentials in JSON format:json
+
+{
+    "fullName": "YourFullName",
+    "password": "YourPassword"
+}
+Send the request and observe the response. A successful login will result in a status code of 200 and, typically, a user object or token in the response body.
+<img width="1287" alt="截屏2023-11-16 17 47 01" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/d09c59e0-e02a-4e32-8808-fafb1024f031">
+
+
+
+//作业二
+// http://localhost:3000/login.html
+
+// postman：
+// http://localhost:3000/login
+
+// {
+//   "username": "Jinming",
+//   "password": "123456"
+// }
+
+<img width="1286" alt="截屏2023-11-16 17 47 24" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/9669562c-b652-44ed-b83f-416641af105b">
+
+
+// Content-Type 为 application/json
+// http://localhost:3000/api/login?Content-Type=application/json
+
+2-4.React
+
+# React Components and Router Example
+
+## Project Structure
+
+This project is structured to contain separate components for each page along with the usage of React Router for navigation. Here's the breakdown of the folder structure:
+
+- `src/`: The source directory for all the project's code.
+  - `assets/`: Contains all the static files such as images used in the project.
+  - `components/`: Includes reusable components that can be shared across different pages.
+  - `layout/`: Houses the layout components that wrap the application or specific pages.
+  - `pages/`: Contains the individual page components for the application.
+    - `AboutUs/`: Components specific to the About Us page.
+    - `Contact/`: Components specific to the Contact page.
+    - `Home/`: Components specific to the Home page.
+    - `Jobs/`: Components specific to the Jobs page.
+  - `App.jsx`: The main React component that includes the router setup.
+  - `index.css`: Global styles for the project.
+  - `index.js`: The entry point for the React application.
+  - `logo.svg`: The logo file used in the application.
+  - `reportWebVitals.js`: Used for logging performance of the app (part of Create React App scaffold).
+  - `routes.jsx`: Defines the routes for the application using React Router.
+  - `setupTests.js`: Setup file for tests using Jest.
+
+## Setup Instructions
+
+To run this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the root directory of the project in your terminal.
+3. Install the dependencies with `npm install`.
+4. Start the development server with `npm start`.
+5. Open your browser and go to `http://localhost:3000` to view the application.
+
+<img width="1286" alt="截屏2023-11-16 17 45 38" src="https://github.com/ZJM0312/6150_Jinming_Zhang_Assignments/assets/144468085/dae8d5b7-a1b2-44b8-a738-8ef03501f698">
+
+
+## Components
+
+- **Card Component**: A reusable component displayed on each page with specific details. It's implemented following the "complex_component_single.htm" example from the class.
+- **Dynamic Component**: Utilize the `map()` function to render a list of items dynamically on at least one of the pages.
+
+## Styling
+
+Feel free to apply additional CSS to enhance the aesthetics of the pages. You can modify `index.css` or add new style sheets specific to each component.
+
+## Additional Notes
+
+- Make sure to follow the React best practices as shown in the lab.
+- The project structure is modular, allowing for easy expansion and maintenance.
+
+## Support
+
+For any additional help or clarification, please refer to the React documentation or the resources provided in the classroom.
+
+
+
+
 WEEK 2
 
 This is my week 2 assignment. I have used all pointed HTML and HTML5 controls and further optimize last week webiste.
