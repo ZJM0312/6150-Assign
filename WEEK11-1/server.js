@@ -24,7 +24,7 @@ app.use("/user", userRoutes);
 // 挂载认证路由
 app.use("/api", authRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
@@ -54,10 +54,10 @@ app.listen(PORT, () => {
 // http://localhost:3000/user/getAll
 
 //作业二
-// http://localhost:3000/login.html
+// http://localhost:8000/login.html
 
 // postman：
-// http://localhost:3000/login
+// http://localhost:8000/login
 
 // {
 //   "username": "Jinming",
@@ -65,4 +65,4 @@ app.listen(PORT, () => {
 // }
 
 // Content-Type 为 application/json
-// http://localhost:3000/api/login?Content-Type=application/json
+// http://localhost:8000/api/login?Content-Type=application/json
